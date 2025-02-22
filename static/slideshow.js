@@ -227,3 +227,21 @@ function setupFileUpload() {
     progress.style.width = '0%';
   }
 }
+document.querySelectorAll('.nav-links a').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+      // Ensure href starts with #
+      if (this.getAttribute('href').startsWith("#")) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href'); // Get section ID
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+              targetElement.scrollIntoView({
+                  behavior: "smooth",
+                  block: "start"
+              });
+          }
+      }
+  });
+});

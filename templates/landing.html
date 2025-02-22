@@ -16,8 +16,9 @@
             <div class="nav-links">
                 <a href="{{ url_for('start') }}">Upload</a>
                 <a href="https://www.overleaf.com/gallery/tagged/cv">Templates</a>   
-                <a href="#">FAQ</a>
-                <a href="#">Contact</a>
+                <a href="#about-container">About</a>
+                <a href="#faq-container">FAQ</a>
+                <a href="#footer">Contact</a>
             </div>
         </div>
     </nav>
@@ -125,7 +126,7 @@
         </div>
     </div> 
         <!-- FAQ Section -->
-        <div class="faq-container">
+        <div class="faq-container" id="faq-container">
             <div class="faq-header">
                 <h1>Frequently Asked Questions</h1>
                 
@@ -203,10 +204,90 @@
                 </div>
             </div>
         </div>
+        <!-- About Section -->
+
+        <div class="about-container" id="about-container">
+            <div class="hero">
+                <h1>About RESUGENIE</h1>
+                <p>
+                    Revolutionizing resume parsing with advanced AI technology. Our platform streamlines recruitment by
+                    converting unstructured resume data into actionable insights.
+                </p>
+            </div>
+    
+            <div class="features">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Smart Document Processing</h3>
+                    <p>
+                        Extract text from multiple document formats including PDF, Word, and HTML with high accuracy using
+                        advanced OCR technology.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>AI-Powered Analysis</h3>
+                    <p>
+                        Our NLP algorithms intelligently identify and categorize key information from resumes, making data
+                        extraction effortless.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Structured Data Output</h3>
+                    <p>
+                        Convert unstructured resume content into organized, searchable data that integrates seamlessly with
+                        ATS systems.
+                    </p>
+                </div>
+    
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Processing</h3>
+                    <p>
+                        Your data security is paramount. All documents are processed with enterprise-grade encryption and
+                        security protocols.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="benefits">
+                <h2>Why Choose RESUGENIE?</h2>
+                <div class="benefit-card-container">
+                    <div class="benefit-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Fast Processing</h3>
+                        <p>Parse hundreds of resumes in minutes</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>High Accuracy</h3>
+                        <p>99.9% accurate data extraction</p>
+                    </div>
+                    <div class="benefit-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Round-the-clock technical assistance</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!-- Footer Section -->
-        <footer class="footer">
+        <footer class="footer"id="footer">
              <div class="footer-div">
-                <div><img class="footer-logo" src="logo.png" alt=""> </div>
+                <div><img class="header-logo" src="{{ url_for('static', filename='logo.png') }}" alt=""></div>
                 <div class="social_media">
                     <ul>
                         <a href="#"><i class="fa-brands fa-facebook"></i></i></a>

@@ -7,16 +7,18 @@
 
 body {
     min-height: 100vh;
-    background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+    background-color: #111827;
+    /* background: linear-gradient(135deg, #212529 0%, #343a40 100%); */
     padding: 0;
     margin: 0;
+    
 }   
 
 /* Navbar Styles */
 .navbar {
     background: linear-gradient(to bottom, #212529, #1a1d20);
     padding: 1rem 2rem;
-    position: fixed;
+    
     width: 100%;
     top: 0;
     z-index: 1000;
@@ -171,21 +173,7 @@ h1 {
     font-size: 1.1em;
 }
 
-/* .upload-button {
-    background: linear-gradient(45deg, #667eea, #764ba2);
-    color: white;
-    padding: 15px 40px;
-    border: none;
-    border-radius: 30px;
-    font-size: 1.2em;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(118, 75, 162, 0.4);
-} */
-/* From Uiverse.io by OliverZeros */ 
+
 button {
   all: unset;
 }
@@ -627,7 +615,7 @@ h1 {
 }
 
 .footer {
-    background: linear-gradient(to top, #1a1d20, #212529);
+    background:#1A1E26  ;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -765,4 +753,118 @@ h1 {
 
 .button-container:hover .button-icon {
     transform: translateX(0.25rem);
+}
+
+
+.about-container {
+    width: auto; /* Equivalent to max-w-6xl */
+    padding: 48px 48px; 
+     margin-bottom:30px;
+    justify-content: center;
+}   
+
+.hero {
+    text-align: center;
+    margin-bottom: 64px; /* Equivalent to mb-16 */
+}
+
+.hero h1 {
+    font-size: 2.25rem; /* Equivalent to text-4xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.hero p {
+    color: #a1a1aa; /* Equivalent to text-gray-400 */
+    font-size: 1.25rem; /* Equivalent to text-lg */
+    max-width: 768px; /* Equivalent to max-w-3xl */
+    margin: 0 auto;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+    gap: 32px; /* Equivalent to gap-8 */
+    margin-bottom: 64px; /* Equivalent to mb-16 */
+}
+
+.feature-card {
+    background-color: #1f2937; /* Equivalent to bg-gray-800 */
+    border-radius: 0.75rem; /* Equivalent to rounded-xl */
+    padding: 24px; /* Equivalent to p-6 */
+}
+
+.feature-icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.feature-icon i {
+    color: #8662d1; /* Equivalent to text-blue-500 */
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    margin-right: 12px; /* Equivalent to mr-3 */
+}
+
+.feature-card h3 {
+    font-size: 1.25rem; /* Equivalent to text-xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    color: white;
+}
+
+.feature-card p {
+    color: #a1a1aa; /* Equivalent to text-gray-400 */
+}
+
+.benefits {
+    background-color: #1f2937; /* Equivalent to bg-gray-800 */
+    border-radius: 0.75rem; /* Equivalent to rounded-xl */
+    padding: 32px; /* Equivalent to p-8 */
+    padding-bottom:50px;
+}
+
+.benefits h2 {
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 700; /* Equivalent to font-bold */
+    color: white;
+    margin-bottom: 24px; /* Equivalent to mb-6 */
+    text-align: center;
+}
+
+.benefit-card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid */
+    gap: 32px; /* Equivalent to gap-8 */
+    text-align: center;
+}
+
+.benefit-card {
+    padding: 16px; /* Equivalent to p-4 */
+}
+
+.benefit-card i {
+    color: #8662d1; /* Equivalent to text-blue-500 */
+    font-size: 2rem; /* Equivalent to text-3xl */
+    margin-bottom: 16px; /* Equivalent to mb-4 */
+}
+
+.benefit-card h3 {
+    color: white;
+    font-weight: 600; /* Equivalent to font-semibold */
+    margin-bottom: 8px; /* Equivalent to mb-2 */
+}
+
+.benefit-card p {
+    color: #a1a1aa; /* Equivalent to text-gray-400 */
+}
+
+/* Media query for smaller screens (optional) */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .benefit-card-container {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
 }
