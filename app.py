@@ -163,4 +163,5 @@ def extract_text_from_file(file_path):
         return None
 
 if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
